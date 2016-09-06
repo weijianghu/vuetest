@@ -8,16 +8,19 @@
     <script src="js/vue.js"></script>
 </head>
 <body>
+    双向绑定
+    指令 v-model
+    数据模型
     <div id="app">
         {{message}}
         <br>
-        <input type="text" v-model="message">
+        <input type="text" v-model="message" value="这是指令">
     </div>
     <script type="text/javascript">
         new Vue({
-            el:'#app',
+            el:'#app',//选择元素
             data:{
-                message:"hi"
+                message:"hi"//初始数据，如果input元素有value值，那么此值无效
             }
         });
     </script>
